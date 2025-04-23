@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wi-Chi | Sitio Oficial</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<!-- Slider de fondo -->
+    <div class="slider">
+        <div class="slide" style="background-image: url('assets/img/slider1.jpg');"></div>
+        <div class="slide" style="background-image: url('assets/img/slider2.jpg');"></div>
+        <div class="slide" style="background-image: url('assets/img/slider3.jpg');"></div>
+    </div>
+
+    <!-- Encabezado -->
+    <header class="header">
+        <div class="logo">
+        <img src="assets/img/logo.png" alt="Logo de Wi-Chi">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#planes">Planes</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="servicio-item">
+            <i class="fas fa-wifi"></i>
+            <h3>Internet de Alta Velocidad</h3>
+            <p>Conexión rápida y estable para tu hogar o negocio.</p>
+        </div>
+        <div class="servicio-item">
+            <h3>Telefonía Móvil</h3>
+            <p>Planes flexibles y cobertura en todo el país.</p>
+        </div>
+        <div class="servicio-item">
+            <h3>Televisión por Cable</h3>
+            <p>Disfruta de tus canales favoritos en alta definición.</p>
+        </div>
+    </section>
+
+    <!-- Sección de Planes -->
+    <section id="planes" class="planes">
+        <h2>Nuestros Planes</h2>
+        <div class="plan-item">
+            <h3>Plan Básico</h3>
+            <p>Ideal para usuarios ocasionales.</p>
+            <p><strong>$15.000/mes</strong></p>
+        </div>
+        <div class="plan-item">
+            <h3>Plan Familiar</h3>
+            <p>Perfecto para toda la familia.</p>
+            <p><strong>$30.000/mes</strong></p>
+        </div>
+        <div class="plan-item">
+            <h3>Plan Premium</h3>
+            <p>La mejor experiencia para usuarios exigentes.</p>
+            <p><strong>$65.000/mes</strong></p>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contacto">
+        <h2>Contáctanos</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <div class="error" id="nombreError">Por favor ingrese un nombre válido</div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <div class="error" id="emailError">Por favor ingrese un email válido</div>
+            </div>
+
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+                <div class="error" id="telefonoError">Por favor ingrese un teléfono válido</div>
+            </div>
+
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                <div class="error" id="mensajeError">Por favor ingrese un mensaje</div>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <h2>Encuentranos en Temuco</h2>
+        <div class="mapa">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31608.710195670493!2d-72.61568061548416!3d-38.735901260176654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966bcd96e3b68101%3A0xafead99d1a1b2e42!2sTemuco%2C%20Regi%C3%B3n%20de%20la%20Araucan%C3%ADa!5e0!3m2!1ses-419!2scl!4v1713452687345!5m2!1ses-419!2scl" 
+                width="100%" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Sección de Estadísticas -->
+    <section id="estadisticas" class="estadisticas">
+        <h2>Nuestras Estadísticas</h2>
+        <div class="contador">
+            <h3><span class="count" data-target="12000">0</span>+</h3>
+            <p>Clientes satisfechos</p>
+        </div>
+        <div class="contador">
+            <h3><span class="count" data-target="800">0</span>+</h3>
+            <p>Conexiones activas</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Wi-Chi. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="assets/java/java.js"></script>
+    <script src="assets/java/contador.js"></script>
+
+</body>
+</html>
